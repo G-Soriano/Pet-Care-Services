@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+    body {
+        background: #00aadc;
+        padding: 2%;
+
+    }
+
+    .hello {
+        position: relative;
+        animation-name: hello;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 100px;
+    }
+
+    .doggy {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #walk {
+            width: 750px;
+            height: fit-content;
+        }
+
+    p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    @keyframes hello {
+        from { bottom: 200px;}
+        to { top: 0px;}
+    }
+
+    @media only screen and (max-width: 600px) {
+        .doggy {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #walk {
+            width: 725px;
+            height: fit-content;
+        }
+    }
+
+    @media only screen and (max-width: 300px) {
+        .doggy {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #walk {
+            width: 300px;
+            height: fit-content;
+        }
+        h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 70px;
+    }  
+    }
+
+        </style>
+    <title> Pet Care Services</title>
+
+
+    
+    </head>
+    <body>
+    <div class="hello">
+        <h1>HELLO!</h1>
+    </div>
+    <div class="doggy">
+        <a href="home.html"><img src="images/doggy.gif" alt="waliking dog" id="walk"></a>
+    </div>
+       <!-- <p>CLICK ME!</p> -->
+    </body>
+</html>
